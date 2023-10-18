@@ -1,0 +1,300 @@
+* {
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box ;
+    color: white;
+    font-family: 'General Sans';
+    background-color: black;
+}
+
+html, body {
+    width: 100% ;
+    height: 100% ;
+}
+
+.mouseFollower {
+    width: 5px ;
+    height: 5px ;
+    border-radius: 50% ;
+    background-color: #fff;
+    position: absolute ;
+    z-index: 9999;
+    mix-blend-mode: difference ;
+    transition: all  cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    display: none ;
+}
+
+.main {
+    padding: 50px 50px ;
+
+}
+
+.landingPage {
+    width: 100% ;
+    height: 100vh ;
+    background-color: black;
+
+    .animationContainer {
+        width: fit-content;
+        overflow: hidden;
+
+        .animationContent {
+            transform: translateY(100%);
+        }
+    }
+
+    .navigationBar {
+        display: flex ;
+        flex-direction: row ;
+        align-items: center ;
+        justify-content: space-between ;
+        font-size: 1.5vw;
+        
+        // added
+        // width: 95vh ;
+        // position: fixed;
+
+
+        a {
+            text-decoration: none ;
+            font-weight: 600 ;
+            color: white;
+        }
+
+        h5 {
+
+            text-transform: uppercase;
+        }
+    }
+
+    .landingPageHeading {
+        margin-top: 40px;
+
+
+        h1 {
+            font-size: 10vw;
+            text-transform: uppercase;
+            line-height: 1;
+            letter-spacing: .1rem;
+            opacity: .7;
+        }
+
+        .designer_toronto {
+
+            h1{
+                margin-left: 60px;
+            }
+        }
+
+        .designer_toronto {
+            width: fit-content;
+            
+            // apply below three property to some gsap animation to work fine
+            display: flex ;
+            flex-direction: column;
+            align-items: end;
+
+            h5 {
+                text-align: right;
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                font-weight: 900;
+                transform: translateY(-100%);
+            }
+        }
+
+        
+    }
+
+    .rightButtonHeading {
+        margin-top: 7.5rem ;
+        margin-bottom: 10px ;
+
+        display: flex ;
+        flex-direction: column;
+        align-items: end;
+
+        h4 {
+            text-align: right;
+            text-transform: uppercase ;
+            font-size: 1rem;
+            margin-top: 5px;
+        }
+
+        .animationContent {
+            transform: translateY(-200%);
+        }
+    }
+
+    .landingPageFooter {
+        display: flex ;
+        flex-direction:  row ;
+        align-items: center ;
+        justify-content: space-between;
+        // margin-bottom: 50px ;
+
+        h4 {
+            text-transform: uppercase ;
+            font-size: 1rem ;
+            font-weight: 800;
+        }
+
+        .iconCollection {
+            display: flex ;
+            gap: 5px ;
+
+
+            .iconContainer {
+                width: 1rem ;
+                height: 1rem ;
+                border-radius: 50% ;
+                font-size: 1rem;
+
+                display: flex ;
+                align-items: center ;
+                justify-content: center ;
+
+                // i {
+                //     background-color: gray;
+                //     border-radius: 50%;
+                //     // font-size: 2rem;
+                // }
+            }
+        }
+    }
+}
+
+.mainHighLights {
+
+    padding-top: 80px ;
+
+    .element {
+        width: 90% ;
+        border-top: 1px solid #888 ;
+        padding: 2.5vw 0 ;
+        font-weight: 900 ;
+        font-size: 3.4vw;
+        text-transform: uppercase;
+
+        display: flex ;
+        align-items: center;
+        justify-content: space-between;
+        position: relative ;
+
+        h1 {
+            opacity: .6;
+        }
+
+        h6 {
+            font-size: .6rem ;
+        }
+
+        img {
+            position: absolute ;
+            height: 160% ;
+            z-index: 10000;
+            // display: none ;
+            opacity: 0;
+            cursor: pointer;
+        }
+    }
+
+    .hudu {
+        border-bottom: 1px solid #888 ;
+    }
+}
+
+.AboutMe {
+    width: 100% ;
+    padding-block: 80px ;
+    display: flex ;
+    align-items: center ;
+    flex-wrap: wrap ;
+    gap: 20px ;
+    justify-content: center;
+    padding-bottom: 4rem ;
+
+    img {
+        width: 250px ;
+    }
+
+    .abouCynthia {
+        width: 30rem;
+
+        p {
+            font-size: 1rem ;
+            margin-bottom: 2rem ;
+
+            span {
+                display: block;
+                opacity: .6;
+                margin-bottom: 2px;
+            }
+        }
+
+        a {
+            // margin-top: 1rem ;
+            text-decoration: none ;
+            font-size: 1rem ;
+            border: 1px solid #888 ;
+            padding: .5rem .6rem ;
+            border-radius: 10px;
+            transition: all ease-in 600ms ;
+        }
+
+        a:hover {
+            background-color: white ;
+            color: black;
+            border: none ;
+            outline: none ;
+        }
+    }
+}
+
+.mainFooter {
+
+    height: 80px;
+    display: flex ;
+    flex-direction: column;
+    align-items: flex-start ;
+    justify-content: space-between;
+    font-size: 1rem ;
+
+    .subscribed {
+
+        .forgotMention {
+            opacity: .6;
+            text-transform: uppercase;
+            margin-bottom: 2px;
+        }
+
+        .youtubeChannel {
+            text-transform: uppercase ;
+
+        }
+    }
+
+    .linkedCollection {
+        display: flex ;
+        flex-direction: row ;
+        flex-wrap: wrap;
+        align-items: center ;
+        justify-content: space-between;
+        text-transform: uppercase ;
+        gap: 47rem ;
+
+        .leftContainer, .rightContainer {
+            display: flex ;
+            align-items: center ;
+            justify-content: space-between;
+            gap: 7px ;
+            flex-wrap: wrap;
+
+        } 
+        
+        .rightContainer {
+            gap: .7rem ;
+        }
+        
+    }
+}
