@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'General Sans';
+  background-color: black; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+.mouseFollower {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  display: none; }
+
+.main {
+  padding: 50px 50px; }
+
+.landingPage {
+  width: 100%;
+  height: 100vh;
+  background-color: black; }
+  .landingPage .animationContainer {
+    width: fit-content;
+    overflow: hidden; }
+    .landingPage .animationContainer .animationContent {
+      transform: translateY(100%); }
+  .landingPage .navigationBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5vw; }
+    .landingPage .navigationBar a {
+      text-decoration: none;
+      font-weight: 600;
+      color: white; }
+    .landingPage .navigationBar h5 {
+      text-transform: uppercase; }
+  .landingPage .landingPageHeading {
+    margin-top: 40px; }
+    .landingPage .landingPageHeading h1 {
+      font-size: 10vw;
+      text-transform: uppercase;
+      line-height: 1;
+      letter-spacing: .1rem;
+      opacity: .7; }
+    .landingPage .landingPageHeading .designer_toronto h1 {
+      margin-left: 60px; }
+    .landingPage .landingPageHeading .designer_toronto {
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      align-items: end; }
+      .landingPage .landingPageHeading .designer_toronto h5 {
+        text-align: right;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: 900;
+        transform: translateY(-100%); }
+  .landingPage .rightButtonHeading {
+    margin-top: 7.5rem;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: end; }
+    .landingPage .rightButtonHeading h4 {
+      text-align: right;
+      text-transform: uppercase;
+      font-size: 1rem;
+      margin-top: 5px; }
+    .landingPage .rightButtonHeading .animationContent {
+      transform: translateY(-200%); }
+  .landingPage .landingPageFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+    .landingPage .landingPageFooter h4 {
+      text-transform: uppercase;
+      font-size: 1rem;
+      font-weight: 800; }
+    .landingPage .landingPageFooter .iconCollection {
+      display: flex;
+      gap: 5px; }
+      .landingPage .landingPageFooter .iconCollection .iconContainer {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+
+.mainHighLights {
+  padding-top: 80px; }
+  .mainHighLights .element {
+    width: 90%;
+    border-top: 1px solid #888;
+    padding: 2.5vw 0;
+    font-weight: 900;
+    font-size: 3.4vw;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; }
+    .mainHighLights .element h1 {
+      opacity: .6; }
+    .mainHighLights .element h6 {
+      font-size: 0.6rem; }
+    .mainHighLights .element img {
+      position: absolute;
+      height: 160%;
+      z-index: 10000;
+      opacity: 0;
+      cursor: pointer; }
+  .mainHighLights .hudu {
+    border-bottom: 1px solid #888; }
+
+.AboutMe {
+  width: 100%;
+  padding-block: 80px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding-bottom: 4rem; }
+  .AboutMe img {
+    width: 250px; }
+  .AboutMe .abouCynthia {
+    width: 30rem; }
+    .AboutMe .abouCynthia p {
+      font-size: 1rem;
+      margin-bottom: 2rem; }
+      .AboutMe .abouCynthia p span {
+        display: block;
+        opacity: .6;
+        margin-bottom: 2px; }
+    .AboutMe .abouCynthia a {
+      text-decoration: none;
+      font-size: 1rem;
+      border: 1px solid #888;
+      padding: 0.5rem 0.6rem;
+      border-radius: 10px;
+      transition: all ease-in 600ms; }
+    .AboutMe .abouCynthia a:hover {
+      background-color: white;
+      color: black;
+      border: none;
+      outline: none; }
+
+.mainFooter {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-size: 1rem; }
+  .mainFooter .subscribed .forgotMention {
+    opacity: .6;
+    text-transform: uppercase;
+    margin-bottom: 2px; }
+  .mainFooter .subscribed .youtubeChannel {
+    text-transform: uppercase; }
+  .mainFooter .linkedCollection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    gap: 47rem; }
+    .mainFooter .linkedCollection .leftContainer, .mainFooter .linkedCollection .rightContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 7px;
+      flex-wrap: wrap; }
+    .mainFooter .linkedCollection .rightContainer {
+      gap: 0.7rem; }
+
+/*# sourceMappingURL=styles.css.map */
